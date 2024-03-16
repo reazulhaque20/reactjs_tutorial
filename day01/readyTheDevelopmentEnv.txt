@@ -1,0 +1,8 @@
+Checking node-js version
+
+node --version
+
+Checking npm (Node Package Manager) version
+
+npm --version
+
