@@ -1,7 +1,14 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Form(){
     const [name, setName] = useState({firstName: "", lastName: ""});
+    // useEffect(() => {
+    //     setName({...name, firstName: "Hello"});
+    // });
+
+    useEffect(() => {
+        console.log("FirstName Value Changed...")
+    },[name.firstName]);
     return(
 
         <div>
